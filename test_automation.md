@@ -172,3 +172,46 @@ szabványoknál)
 ● A biztonsági sebezhetőségek bizonyos típusai (mint például a puffer túlcsordulás)
 ● Hiányok vagy pontatlanságok a tesztbázis lefedettségben (mint például hiányzó tesztek egy adott 
 elfogadási feltételre)
+
+### Szoftverfejlesztési és tesztelési modellek(vízesés, V-modell, agilis modell):
+
+A szoftverfejlesztési életciklusmodell (SDLC) egy absztrakt, magasszintű reprezentációja a
+szoftverfejlesztési folyamatnak. A szoftverfejlesztési életciklusmodell definiálja, hogy a különböző fejlesztési
+fázisok és egyéb, a folyamat során végrehajtott tevékenységek hogyan kapcsolódnak egymáshoz logikailag
+és kronológiailag. Példák a szoftverfejlesztési életciklusmodellekre: szekvenciális fejlesztési modellek (pl.:
+vízesés modell, V-modell), iteratív fejlesztési modellek (pl.: spirális modell, prototípus fejlesztés) és
+inkrementális fejlesztési modellek (pl.: Unified Process).
+<br>
+<img src="https://testsigma.com/blog/wp-content/uploads/image-132.png" alt="image" width="500" height="auto"><br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231030123258/software-Testing-SDLC-V-model.webp" alt="image" width="500" height="auto"><br>
+<img src="https://miro.medium.com/1*PDzFYucgvC4z668ncU2YLA.png" alt="image" width="500" height="auto">
+
+
+### TDD, BDD modell jellemzői.
+
+Néhány tevékenység a szoftverfejlesztési folyamatokon belül leírható részletesebb szoftverfejlesztési
+módszerekkel és agilis gyakorlatokkal is. Például: elfogadásiteszt-vezérelt fejlesztés (angol irodalomban
+ATDD), viselkedésvezérelt fejlesztés (BDD), szakterület-vezérelt tervezés (DDD), extrém programozás (XP),
+feature-vezérelt fejlesztés (FDD), Kanban, Lean IT, Scrum és tesztvezérelt fejlesztés (TDD).
+
+A TDD, ATDD és BDD hasonló fejlesztési megközelítések, ahol a tesztek meghatározása a fejlesztés
+irányításának eszközeként szolgál. Mindegyik megközelítés megvalósítja a korai tesztelés elvét (lásd a 1.3.
+fejezetet) és követi a shift left megközelítést (lásd: 2.1.5-ös fejezet), mivel a tesztek meghatározása előbb
+történik, mint a kód megírásra. Ezek a megközelítések az iteratív fejlesztési modellt támogatják és az
+alábbiak szerint lehet jellemezni őket:
+Tesztvezérelt fejlesztés (TDD):
+● A kódolást tesztesetek irányítják (az átfogó szoftvertervek helyett) (Beck 2003)
+● Először a tesztek kerülnek megírásra, majd azt követően a kód, olyan módon, hogy a teszteknek
+megfeleljen. Végül a teszteket és a kódot is refaktorálják.
+Elfogadásiteszt-vezérelt fejlesztés (ATDD) (lásd a 4.5.3. fejezetet):
+● A teszteket elfogadási feltételekből származtatja a rendszertervezési folyamat részeként (Gärtner
+2011)
+● A teszteket az előtt írják meg, hogy lefejesztésre kerülne az alkalmazás azon része, mely kielégíti
+ezeket a teszteket.
+Viselkedésvezérelt fejlesztés (BDD)
+● Kifejezi az alkalmazás kívánt viselkedését olyan tesztesetekkel, melyek egyszerű formában,
+természetes nyelven vannak megírva, és így könnyen érthető az érdekelt felek számára – általában
+a "Given/When/Then" formát használva (Chelimsky 2010)
+● A teszteseteket ezután automatikusan végrehajtható tesztekké alakítják.
+A fent említett megközelítések alkalmazása során, a tesztek megmaradhatnak automatizált tesztek
+formájában, hogy biztosítsák a kód minőségét jövőbeli módosítások esetén.
